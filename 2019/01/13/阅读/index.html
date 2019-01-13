@@ -166,6 +166,11 @@
             <span class="date-meta">2019/01/13</span>
         </span>
         
+            <span class="fa-wrap">
+                <i class="fa fa-eye"></i>
+                <span id="busuanzi_value_page_pv"></span>
+            </span>
+        
     
 </div>
 
@@ -174,7 +179,10 @@
     </div>
     
     <div class="post-body post-content">
-        <h1 id="ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications"><a href="#ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications" class="headerlink" title="ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications"></a>ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications</h1><p>要求:</p>
+        <blockquote>
+<p>title：ASC准备工作</p>
+</blockquote>
+<h1 id="ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications"><a href="#ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications" class="headerlink" title="ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications"></a>ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications</h1><p>要求:</p>
 <p>一、学校或院系超级计算机活动简介（5分）</p>
 <p>二、团队介绍（5分）</p>
 <p>三、技术要求（90分）</p>
@@ -210,12 +218,36 @@
 </li>
 </ol>
 <h1 id="Perceptual-Losses-for-Real-Time-Style-Transfer-and-Super-Resolution"><a href="#Perceptual-Losses-for-Real-Time-Style-Transfer-and-Super-Resolution" class="headerlink" title="Perceptual Losses for Real-Time Style Transfer and Super-Resolution"></a>Perceptual Losses for Real-Time Style Transfer and Super-Resolution</h1><blockquote>
-<p>参考：<a href="https://www.jianshu.com/p/b728752a70e9" target="_blank" rel="noopener">基于感知损失函数的实时风格转换和超分辨率重建 (zhwhong)</a></p>
+<p>参考：</p>
+<p><a href="https://www.jianshu.com/p/b728752a70e9" target="_blank" rel="noopener">基于感知损失函数的实时风格转换和超分辨率重建 (zhwhong)</a></p>
+<p><a href="https://www.jianshu.com/p/fe0c149ea806" target="_blank" rel="noopener">深度学习可以做哪些有趣的事情？</a></p>
 </blockquote>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p><strong>摘要：</strong>我们考虑的图像转换的问题，即将一个输入图像变换成一个输出图像。最近热门的图像转换的方法通常是训练前馈卷积神经网络，将输出图像与原本图像的逐像素差距作为损失函数。并行的工作表明，高质量的图像可以通过用预训练好的网络提取高级特征、定义并优化感知损失函数来产生。我们组合了一下这两种方法各自的优势，提出采用感知损失函数训练前馈网络进行图像转换的任务。本文给出了图像风格化的结果，训练一个前馈网络去解决实时优化问题（Gatys等人提出的），和基于有优化的方法对比，我们的网络产生质量相当的结果，却能做到三个数量级的提速。我们还实验了单图的超分辨率重建，同样采用感知损失函数来代替求逐像素差距的损失函数<br> 　　<br> <strong>关键词：</strong><code>风格转换</code>，<code>超分辨率重建</code>，<code>深度学习</code></p>
-<h1 id="三-方法"><a href="#三-方法" class="headerlink" title="三. 方法"></a>三. 方法</h1><p>像图2中展示的那样，我们的系统由两部分组成：一个图片转换网络f~w~ 和一个损失网络 φ（用来定义一系列损失函数l1, l2, l3），图片转换网络是一个深度残差网络，参数是权重W，它把输入的图片x通过映射 y=f~w~(x)转换成输出图片y，每一个损失函数计算一个标量值li(y,y~i~), 衡量输出的y和目标图像y~i~之间的差距。图片转换网络是用SGD训练，使得一系列损失函数的加权和保持下降。</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>摘要：</strong>我们考虑的图像转换的问题，即将一个输入图像变换成一个输出图像。最近热门的图像转换的方法通常是训练前馈卷积神经网络，将输出图像与原本图像的逐像素差距作为损失函数。并行的工作表明，高质量的图像可以通过用预训练好的网络提取高级特征、定义并优化感知损失函数来产生。我们组合了一下这两种方法各自的优势，提出采用感知损失函数训练前馈网络进行图像转换的任务。本文给出了图像风格化的结果，训练一个前馈网络去解决实时优化问题（Gatys等人提出的），和基于有优化的方法对比，我们的网络产生质量相当的结果，却能做到三个数量级的提速。我们还实验了单图的超分辨率重建，同样采用感知损失函数来代替求逐像素差距的损失函数</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>我们的系统由两部分组成：</p>
+<p>一个<strong>图片转换网络f~w~</strong> </p>
+<p>一个<strong>损失网络 φ</strong>（用来定义一系列损失函数l1, l2, l3）</p>
+<p>图片转换网络是一个<strong>深度残差网络</strong></p>
+<p>参数是权重W，它把输入的图片x通过映射 y=f~w~(x)转换成输出图片y，每一个损失函数计算一个标量值li(y,y~i~), 衡量输出的y和目标图像y~i~之间的差距。</p>
+<p>图片转换网络是用<strong>SGD</strong>训练，使得一系列损失函数的加权和保持下降。</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/145616-16427bfcaab71f02.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="图2：系统概览。左侧是Generator，右侧是预训练好的vgg16网络(一直固定)"></p>
 <p><img src="https://upload-images.jianshu.io/upload_images/145616-ca7f24d7d863f854.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="img"></p>
+<h3 id="图像转换网络"><a href="#图像转换网络" class="headerlink" title="图像转换网络"></a>图像转换网络</h3><p>我们不用任何的池化层，取而代之的是用步幅卷积或微步幅卷积</p>
+<p>我们的神经网络有五个残差块[42]组成，用了[44]说的结构。</p>
+<p>所有的非残差卷积层都跟着一个空间性的batch-normalization[45]，和RELU的非线性层，最末的输出层除外。</p>
+<p>最末层使用一个缩放的Tanh来确保输出图像的像素在[0,255]之间。</p>
+<p><strong>输入和输出：</strong>对于风格转换，输入和输出都是彩色图片，大小3x256x256。对于超分辨率重建，有一个上采样因子f，输出是一个高分辨率的图像3x288x288，输入是一个低分辨率图像 3x288/fx288/f，因为图像转换网络是完全卷积，所以在测试过程中它可以被应用到任何分辨率的图像中。</p>
+<p><strong>下采样和上采样：</strong>对于超分辨率重建，有一个上采样因子f，我们用了几个残差块跟着Log2f卷及网络（stride=1/2）。这个处理和[1]中不一样，[1]在把输入放进网络之前使用了双立方插值去上采样这个低分辨率输入。不依赖于任何一个固定的上采样插值函数，微步长卷积允许上采样函数和网络的其他部分一起被训练。</p>
+<p><strong>单图超分辨率重建：</strong></p>
+<p>在单图超分辨率重建中，任务是从一个低分辨率的输入，去产生一个高分辨率的输出图片。这是一个固有的病态问题，因为对一个低分辨率图像，有可能对应着很多种高分辨率的图像。当超分辨率因子变大时，这个不确定性会变得更大。对于更大的因子（x4 x8），高分辨率图像中的好的细节很可能只有一丁点或者根本没有出现在它的低分辨率版本中。</p>
+<p>为了解决这个问题，我们训练了超分辨率重建网络，不使用过去使用的逐像素差损失函数，取而代之的是一个<strong>特征重建损失函数</strong>（看section 3）以保证语义信息可以从预训练好的损失网络中转移到超分辨率网络。我们重点关注x4和x8的超分辨率重建，因为更大的因子需要更多的语义信息。</p>
+<p>传统的指标来衡量超分辨率的是PSNR和SSIM，两者都和人类的视觉质量没什么相关的[55,56,57,58,59].PSNR和SSIM仅仅依赖于像素间低层次的差别，并在高斯噪声的相乘下作用，这可能是无效的超分辨率。另外的，PSNR是相当于逐像素差的，所以用PSNR衡量的模型训练过程是让逐像素损失最小化。因此我们强调，这些实验的目标并不是实现先进的PSNR和SSIM结果，而是展示定性的质量差别（逐像素损失函数vs感知损失）</p>
+<p><strong>模型细节：</strong>我们训练模型来完成x4和x8的超分辨率重建，通过最小化特征损失（用vgg16在relu2_2层提取出），用了288x288的小块（1万张MSCOCO训练集），准备了低分辨率的输入，用高斯核模糊的（σ=1.0）下采样用了双立方插值。我们训练时bacth-size=4，训练了20万次，Adam，学习速率0.001，无权重衰减，无dropout。作为一个后续处理步骤，我们执行网络输出和低分辨率输入的直方图匹配。</p>
+<p><strong>基础：</strong>基本模型我们用的 SRCNN[1] 为了它优秀的表现，SRCNN是一个三层的卷积网络，损失函数是逐像素求差，用的ILSVRC2013数据集中的33x33的图片。SRCNN没有训练到x8倍，所以我们只能评估x4时的差异。</p>
+<p>SRCNN训练了超过1亿次迭代，这在我们的模型上是不可能实现的。考虑到二者的差异（SRCNN和我们的模型），在数据，训练，结构上的差异。我们训练图片转换网络x4,x8用了逐像素求差的损失函数，这些网络使用相同搞得数据，结构，训练网络去减少lfeat</p>
+<p><strong>评测：</strong>我们评测了模型，在标准的集合5[60]，集合6[61]，BSD100[41]数据集，我们报告的PSNR和SSIM[54]，都只计算了在Y通道上的（当转换成YCbCr颜色空间后），跟[1,39]一样。</p>
+<p><strong>结果：</strong>我们展示了x4倍超分辨率重建的结果（图8），和其他的方法相比，我们的模型用特征重建训练的，得到了很好的结果，尤其是在锋锐的边缘和好的细节，比如图1的眼睫毛，图2帽子的细节元素。特征重建损失在放大下引起轻微的交叉阴影图案，和基础方法比起来更好。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>在这篇文章中，我们结合了前馈网络和基于优化的方法的好处，通过用感知损失函数来训练前馈网络。我们对风格转换应用了这个方法达到了很好的表现和速度。对超分辨率重建运用了这个方法，证明了用感知损失来训练，能带来更多好的细节和边缘。</p>
+<p>未来的工作中，我们期望把感知损失函数用在更多其他的图像转换任务中，如上色或者语义检测。我们还打算研究不同损失网络用于不同的任务，或者更多种不同的语义信息的数据集</p>
 
     </div>
     
@@ -284,7 +316,7 @@
     <div class="widget">
         <h3 class="title">Table of Contents</h3>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications"><span class="toc-text">ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Perceptual-Losses-for-Real-Time-Style-Transfer-and-Super-Resolution"><span class="toc-text">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Abstract"><span class="toc-text">Abstract</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三-方法"><span class="toc-text">三. 方法</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications"><span class="toc-text">ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Perceptual-Losses-for-Real-Time-Style-Transfer-and-Super-Resolution"><span class="toc-text">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法"><span class="toc-text">方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#图像转换网络"><span class="toc-text">图像转换网络</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论"><span class="toc-text">结论</span></a></li></ol></li></ol>
         
     </div>
 </aside>
