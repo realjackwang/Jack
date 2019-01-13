@@ -191,7 +191,7 @@
 <p><strong>简介</strong></p>
 <p>在本次比赛中，参赛者需要设计一种算法，使用深度学习等SOTA策略对使用双三次核下采样的图像进行4x SR上标。例如。4倍放大后的400x600图像的分辨率为1600x2400。评估将以感知质量感知的方式进行。pim2018[^4]中定义的感知指数(perception index, PI)将用于计算重建的高分辨率图像的质量。PI越低，重建图像的质量越高。Ma和NIOE是两种无参考图像质量度量[^5-6]。<br>$$<br>Perceptual \ index = \frac { 1 } { 2 } ( ( 10 - M a ) + N I Q E )<br>$$<br>每队提交80张重建的高分辨率图像进行评分测试。</p>
 <p>对于初始和最终阶段，每个团队还应该提交一个文件夹，其中包含可以重现测试结果的源代码和模型。</p>
-<p>| Folder Name                             | Contents                             |<br>| ————————————— | ———————————— |<br>| Single Image Super Resolution Challenge | Root directory                       |<br>| HR_images                               | reconstructed high-resolution images |<br>| script                                  | PyTorch source code here             |<br>| model                                   | PyTorch model here                   |</p>
+<p> Folder Name              | Contents<br> ———————— | ———————————<br> Single Image Super Resolution Challenge | Root directory<br> HR_images        | reconstructed high-resolution images<br> script            | PyTorch source code here<br> model                     | PyTorch model here                   </p>
 <p><strong>评判标准</strong></p>
 <p>score = S~PI~ + S~prop~<br>$$<br>S _ { P I } = \frac { 20 } { \left( P I / P I _ { \min } \right) ^ { 4 } }<br>$$</p>
 <ol>
