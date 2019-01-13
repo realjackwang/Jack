@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-01-13T08:20:54.111Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/01/13/%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A5%9E%E5%A5%87%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://yoursite.com/2019/01/13/我的电脑上有哪些神奇的软件/</id>
+    <published>2019-01-13T08:17:13.900Z</published>
+    <updated>2019-01-13T08:20:54.111Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="我的电脑上有哪些神奇的软件"><a href="#我的电脑上有哪些神奇的软件" class="headerlink" title="我的电脑上有哪些神奇的软件"></a>我的电脑上有哪些神奇的软件</h1><ol><li><a href="https://www.jianshu.com/p/d0e0935b150a" target="_blank" rel="noopener"><strong>nvm</strong></a> <strong>Node.js的包管理器</strong></li><li>Node.js <strong>JavaScript运行环境</strong></li><li>chocolate <strong>非开发者包管理器</strong></li><li>scoop <strong>开发者包管理器</strong></li><li>git <strong>版本管理器</strong></li><li>docker <strong>应用容器引擎，虚拟机</strong></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;我的电脑上有哪些神奇的软件&quot;&gt;&lt;a href=&quot;#我的电脑上有哪些神奇的软件&quot; class=&quot;headerlink&quot; title=&quot;我的电脑上有哪些神奇的软件&quot;&gt;&lt;/a&gt;我的电脑上有哪些神奇的软件&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/01/13/%E9%98%85%E8%AF%BB/"/>
+    <id>http://yoursite.com/2019/01/13/阅读/</id>
+    <published>2019-01-13T08:17:13.877Z</published>
+    <updated>2019-01-13T08:20:53.270Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications"><a href="#ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications" class="headerlink" title="ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications"></a>ASC Student Supercomputer Challenge (2019)Preliminary Contest Notifications</h1><p>要求:</p><p>一、学校或院系超级计算机活动简介（5分）</p><p>二、团队介绍（5分）</p><p>三、技术要求（90分）</p><ol><li><p><strong>设计一个HPC系统（15分）</strong></p></li><li><p><strong>HPL和HPCG（15分）</strong></p></li><li><p><strong>单图像超分辨率挑战（30分</strong>）</p><p><strong>简介</strong></p><p>在本次比赛中，参赛者需要设计一种算法，使用深度学习等SOTA策略对使用双三次核下采样的图像进行4x SR上标。例如。4倍放大后的400x600图像的分辨率为1600x2400。评估将以感知质量感知的方式进行。pim2018[^4]中定义的感知指数(perception index, PI)将用于计算重建的高分辨率图像的质量。PI越低，重建图像的质量越高。Ma和NIOE是两种无参考图像质量度量[^5-6]。<br>$$<br>Perceptual \ index = \frac { 1 } { 2 } ( ( 10 - M a ) + N I Q E )<br>$$<br>每队提交80张重建的高分辨率图像进行评分测试。</p><p>对于初始和最终阶段，每个团队还应该提交一个文件夹，其中包含可以重现测试结果的源代码和模型。</p><p>| Folder Name                             | Contents                             |<br>| ————————————— | ———————————— |<br>| Single Image Super Resolution Challenge | Root directory                       |<br>| HR_images                               | reconstructed high-resolution images |<br>| script                                  | PyTorch source code here             |<br>| model                                   | PyTorch model here                   |</p><p><strong>评判标准</strong></p><p>score = S~PI~ + S~prop~<br>$$<br>S _ { P I } = \frac { 20 } { \left( P I / P I _ { \min } \right) ^ { 4 } }<br>$$</p><ol><li><p>参与者应该注意RMSE应该位于8 &lt;RMSE &lt; 18的范围内，否则S~PI~为0</p></li><li><p>S~prop~是委员会根据参与者的提案给出的分数。最大S~prop~为10。鼓励参与者详细描述他们的神经网络设计和网络性能</p></li></ol><p><strong>The participants must use <a href="https://pytorch.org/" target="_blank" rel="noopener">PyTorch</a> framework for this task</strong></p></li><li><p><strong>CESM测试（30分）</strong></p><p><strong>简介</strong></p><p>在气候建模社区广泛使用的模型中，社区地球系统模型(community Earth System Model, CESM)已成为世界上最流行的气候模型之一，广泛应用于气候变化、气候预测和气候变化的各种研究。</p><p>CESM是一个完全耦合的、社区的、全球气候模型，它提供了最先进的计算机模拟地球的过去。礼物。以及未来的气候状况。CESM是全球大约12个气候模型之一，可以用来模拟地球气候系统的许多组成部分，包括海洋、大气。海冰和陆地覆盖。使用CESM。研究人员现在可以模拟海洋生态系统与温室气体的相互作用:臭氧对气候的影响。尘埃和其他大气化学物质:碳在大气、海洋中的循环。陆地表面:以及温室气体对上层大气的影响。</p><p>CESM各组成部分的数学原理和算法在参考文献[^1]和[^2]中有详细描述。我们建议使用稳定版本的cesm1.2.2，其源代码可在参考[^3]中获得。关于CESM的安装和使用的更多信息可以从参考[^4]中找到。</p><p><strong>评判标准</strong></p><p>评价我们可以使用CESM和RMSE的诊断包来评估模型结果</p><p>CESM的诊断包可以获得每个变量的气候学和年变异性。</p><p>我们用500hPa位势高度作为代表。然后计算模型结果与观测数据之间的RMSE<br>$$<br>\mathrm { RMSE } = \sqrt { \frac { \sum _ { t = 1 } ^ { n } \left( x _ { 1 , t } - x _ { 2 , t } \right) ^ { 2 } } { n } }<br>$$</p></li></ol><h1 id="Perceptual-Losses-for-Real-Time-Style-Transfer-and-Super-Resolution"><a href="#Perceptual-Losses-for-Real-Time-Style-Transfer-and-Super-Resolution" class="headerlink" title="Perceptual Losses for Real-Time Style Transfer and Super-Resolution"></a>Perceptual Losses for Real-Time Style Transfer and Super-Resolution</h1><blockquote><p>参考：<a href="https://www.jianshu.com/p/b728752a70e9" target="_blank" rel="noopener">基于感知损失函数的实时风格转换和超分辨率重建 (zhwhong)</a></p></blockquote><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p><strong>摘要：</strong>我们考虑的图像转换的问题，即将一个输入图像变换成一个输出图像。最近热门的图像转换的方法通常是训练前馈卷积神经网络，将输出图像与原本图像的逐像素差距作为损失函数。并行的工作表明，高质量的图像可以通过用预训练好的网络提取高级特征、定义并优化感知损失函数来产生。我们组合了一下这两种方法各自的优势，提出采用感知损失函数训练前馈网络进行图像转换的任务。本文给出了图像风格化的结果，训练一个前馈网络去解决实时优化问题（Gatys等人提出的），和基于有优化的方法对比，我们的网络产生质量相当的结果，却能做到三个数量级的提速。我们还实验了单图的超分辨率重建，同样采用感知损失函数来代替求逐像素差距的损失函数<br> 　　<br> <strong>关键词：</strong><code>风格转换</code>，<code>超分辨率重建</code>，<code>深度学习</code></p><h1 id="三-方法"><a href="#三-方法" class="headerlink" title="三. 方法"></a>三. 方法</h1><p>像图2中展示的那样，我们的系统由两部分组成：一个图片转换网络f~w~ 和一个损失网络 φ（用来定义一系列损失函数l1, l2, l3），图片转换网络是一个深度残差网络，参数是权重W，它把输入的图片x通过映射 y=f~w~(x)转换成输出图片y，每一个损失函数计算一个标量值li(y,y~i~), 衡量输出的y和目标图像y~i~之间的差距。图片转换网络是用SGD训练，使得一系列损失函数的加权和保持下降。</p><p><img src="https://upload-images.jianshu.io/upload_images/145616-16427bfcaab71f02.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="图2：系统概览。左侧是Generator，右侧是预训练好的vgg16网络(一直固定)"></p><p><img src="https://upload-images.jianshu.io/upload_images/145616-ca7f24d7d863f854.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;ASC-Student-Supercomputer-Challenge-2019-Preliminary-Contest-Notifications&quot;&gt;&lt;a href=&quot;#ASC-Student-Supercomputer-Challenge-2019-Preli
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/01/13/hello-world/"/>
+    <id>http://yoursite.com/2019/01/13/hello-world/</id>
+    <published>2019-01-13T08:03:09.631Z</published>
+    <updated>2019-01-13T08:22:04.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
