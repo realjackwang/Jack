@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://skycity233.github.io/"/>
-  <updated>2019-01-14T13:02:58.603Z</updated>
+  <updated>2019-01-14T13:03:09.472Z</updated>
   <id>https://skycity233.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://skycity233.github.io/2019/01/14/%E5%9F%B9%E8%AE%AD/"/>
     <id>https://skycity233.github.io/2019/01/14/培训/</id>
     <published>2019-01-14T01:52:16.949Z</published>
-    <updated>2019-01-14T13:02:58.603Z</updated>
+    <updated>2019-01-14T13:03:09.472Z</updated>
     
     <content type="html"><![CDATA[<h1 id="19-1-14"><a href="#19-1-14" class="headerlink" title="19/1/14"></a>19/1/14</h1><p>CPU（Central Processing Unit）架构：  <strong>冯诺依曼</strong>计算机结构<br><a id="more"></a><br>现代CPU </p><p>a = b + c  编译器：优化  指令时间</p><h3 id="什么是CPU"><a href="#什么是CPU" class="headerlink" title="什么是CPU"></a>什么是CPU</h3><p>完成基本的逻辑指令          基本的操作单元  </p><p>MAC 乘加指令   a = b*c+d  一个指令周期执行一次乘累加</p><p>ALU(算数逻辑单元)   L1(一级缓存)     L2    L3</p><p><img src="https://i.loli.net/2019/01/14/5c3beedc4f991.png" alt="s"></p><h3 id="桌面程序"><a href="#桌面程序" class="headerlink" title="桌面程序"></a>桌面程序</h3><p>真正用于数值运算的指令很少</p><h3 id="CPU架构"><a href="#CPU架构" class="headerlink" title="CPU架构"></a>CPU架构</h3><p><img src="https://i.loli.net/2019/01/14/5c3bf11987047.jpg" alt="x"></p><p>###　简单的CPU</p><p><img src="https://i.loli.net/2019/01/14/5c3bf1c1452f9.png" alt=""></p><p>​                                                          取指 → 译码 → 执行 → 访存 → 写回</p><ul><li><p><strong>流水线　Pipeline</strong></p><p>内存是很慢的 400周期</p></li><li><p><strong>分支预测 Branch Prediction</strong></p></li><li><p><strong>分支断定 Predication</strong></p><p>用条件语句替换分支</p></li><li><p><strong>提升 IPC(instructions/cycle)</strong></p><p>Add r0,r1 -&gt; r2</p><p>Add_v (r0,r1…r8) -&gt; r </p><p>超标量（增加流水线宽度）</p><p>N路超标量</p><p>问题：N倍资源、旁路网络N^2^</p></li></ul><p>   Sandy Bridge 超标量</p><p><strong>指令调度</strong><br>xor 异或<br>xor r1,r2 -&gt; r3<br>add r3,r4 -&gt; r4<br>sub r5,r2 -&gt; r3<br>addi r3,1 -&gt; r1</p><p><strong>寄存器重命名</strong>  替换寄存器<br>xor p1,p2 -&gt; p6<br>add p6,p4 -&gt; p7<br>sub p5,p2 -&gt; p8<br>addi p8,1 -&gt; p9<br>xor and sub 可以并行执行</p><p><strong>乱序执行 Out-of-Order(OoO) Execution</strong></p><p>重排指令，获得最大的吞吐率</p><p><strong>OoO Sandy Bridge</strong></p><p>μop 微指令</p><p><strong>乱序执行</strong></p><p>+IPC 接近理想状态<br>– 面积增加<br>– 功耗增加</p><p><strong>存储器架构/层次Memory Hierarchy</strong></p><p>存储器越大越慢</p><p>SRAM、DRAM(断电消失)、Flash、HDD</p><p><strong>缓存Caching</strong></p><p>缓存层次Cache Hierarchy</p><p>硬件管理：L1、L2、L3</p><p>软件管理：Main memory、Disk</p><p>缓存一致性</p><p><strong>存储器的另外设计考虑</strong></p><ul><li><p>分区Banking</p></li><li><p>一致性Coherency</p></li><li><p>控制器Memory Controller</p></li></ul><p><strong>CPU内部的并行性</strong></p><p><strong>线程级并行Thread-Level Parallelism</strong></p><p>栈 先进先出</p><p>队列 </p><p><strong>锁、一致性和同一性</strong></p><p>问题: 多线程读写同一块数据<br>解决方法: 加锁</p><p><strong>结论</strong></p><p>CPU 为串行程序优化</p><p>缓慢的内存带宽（存储器带宽）将会是大问题</p><p>并行处理是方向</p>]]></content>
     
