@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://skycity233.github.io/Jack/"/>
-  <updated>2019-01-14T13:03:09.472Z</updated>
+  <updated>2019-12-15T07:52:24.450Z</updated>
   <id>https://skycity233.github.io/Jack/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用Github搭建自己的图床-MdPic</title>
+    <link href="https://skycity233.github.io/Jack/2019/12/15/%E5%88%A9%E7%94%A8Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BE%E5%BA%8A-MdPic/"/>
+    <id>https://skycity233.github.io/Jack/2019/12/15/利用Github搭建自己的图床-MdPic/</id>
+    <published>2019-12-15T07:51:06.000Z</published>
+    <updated>2019-12-15T07:52:24.450Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MDPIC"><a href="#MDPIC" class="headerlink" title="MDPIC"></a>MDPIC</h1><p align="center" class="has-mb-6"><br><img class="not-gallery-item" height="48" src="https://i.loli.net/2019/12/14/L3ZzHyqvshx9c2o.png"><br><br> 利用Github搭建自己的图床！<br><br><br><a href="https://github.com/skycity233/MDPIC" target="_blank" rel="noopener">简介</a> |<br><a href="https://github.com/skycity233/MDPIC/blob/master/README_EN.md" target="_blank" rel="noopener">English Version</a><br><br><br></p><a id="more"></a><h3 id="cd-安装"><a href="#cd-安装" class="headerlink" title=":cd: 安装"></a>:cd: 安装</h3><p>1.在你的电脑上安装git</p><p>拥有scoop的同学可以用Power Shell直接安装，没有的可以点击<a href="https://git-scm.com/" target="_blank" rel="noopener">下载git安装包</a></p><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop install git</span><br></pre></td></tr></table></figure><p>2.将git连接远程仓库（Github）,<a href="https://www.runoob.com/git/git-remote-repo.html" target="_blank" rel="noopener">教程</a></p><p>3.点击<a href="https://github.com/new" target="_blank" rel="noopener">此处</a>新建一个仓库用来存放图片</p><p>4.点击此处<a href="https://github.com/skycity233/MDPIC/releases/download/v1.1/mdpic.rar" target="_blank" rel="noopener">下载MdPic</a></p><p>5.将你新建的仓库clone到本地</p><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone [your repository]</span><br></pre></td></tr></table></figure><p>6.将下载的rar包解压到你clone的文件夹里</p><p>7.完成后，打开<a href="https://github.com/skycity233/MDPIC/blob/master/config.yml" target="_blank" rel="noopener">config.yml</a>将github_username和repository_name修改为你的用户名和仓库名，还可以修改快捷键以及语言。</p><p>8.点击mdpic.exe开始使用</p><h3 id="gift-如何使用"><a href="#gift-如何使用" class="headerlink" title=":gift: 如何使用"></a>:gift: 如何使用</h3><p>1.复制一张照片到剪贴板，或者使用截图软件截图到剪贴板（例如Snipaste）</p><p>2.按下F8上传你的图片到你的github（<strong>快捷键可以通过修改config.yml自定义</strong>）</p><p>3.上传成功后，会有提示，同时url会返回到你的剪贴板。（<strong>url会瞬间给你，但是github上传还需一定时间，你可以在markdown中先引用，过一会儿github的图片才会显示</strong>）</p>&lt;p align=”center””&gt;<br><img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215152823895879.gif"><br><br> 使用截图工具上传<br><br><br><p></p>&lt;p align=”center””&gt;<br><img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215153443403012.gif"><br><br> 复制文件上传<br><br><br><p></p>&lt;p align=”center””&gt;<br><img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215153443403012.gif"><br><br> 复制多个文件上传<br><br><br><p></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;MDPIC&quot;&gt;&lt;a href=&quot;#MDPIC&quot; class=&quot;headerlink&quot; title=&quot;MDPIC&quot;&gt;&lt;/a&gt;MDPIC&lt;/h1&gt;&lt;p align=&quot;center&quot; class=&quot;has-mb-6&quot;&gt;&lt;br&gt;&lt;img class=&quot;not-gallery-item&quot; height=&quot;48&quot; src=&quot;https://i.loli.net/2019/12/14/L3ZzHyqvshx9c2o.png&quot;&gt;&lt;br&gt;&lt;br&gt; 利用Github搭建自己的图床！&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/skycity233/MDPIC&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简介&lt;/a&gt; |&lt;br&gt;&lt;a href=&quot;https://github.com/skycity233/MDPIC/blob/master/README_EN.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;English Version&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="https://skycity233.github.io/Jack/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>ASC上课笔记</title>
