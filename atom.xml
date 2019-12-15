@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://skycity233.github.io/Jack/"/>
-  <updated>2019-12-15T08:46:09.322Z</updated>
+  <updated>2019-12-15T13:11:37.942Z</updated>
   <id>https://skycity233.github.io/Jack/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>利用Github搭建自己的图床-MdPic</title>
-    <link href="https://skycity233.github.io/Jack/2019/12/15/%E5%88%A9%E7%94%A8Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BE%E5%BA%8A-MdPic/"/>
-    <id>https://skycity233.github.io/Jack/2019/12/15/利用Github搭建自己的图床-MdPic/</id>
+    <link href="https://skycity233.github.io/Jack/2019/12/41311/"/>
+    <id>https://skycity233.github.io/Jack/2019/12/41311/</id>
     <published>2019-12-15T07:51:06.000Z</published>
-    <updated>2019-12-15T08:46:09.322Z</updated>
+    <updated>2019-12-15T13:11:37.942Z</updated>
     
     <content type="html"><![CDATA[<p align="center" class="has-mb-6"><img class="not-gallery-item" height="48" width="48" src="https://i.loli.net/2019/12/14/L3ZzHyqvshx9c2o.png"><br> 利用Github搭建自己的图床！<br><a href="https://github.com/skycity233/MDPIC" target="_blank" rel="noopener">简介</a> |<a href="https://github.com/skycity233/MDPIC/blob/master/README_EN.md" target="_blank" rel="noopener">English Version</a><br></p><a id="more"></a><h3 id="💿-安装"><a class="header-anchor" href="#💿-安装">¶</a>💿 安装</h3><ol><li><p>在你的电脑上安装git</p><p>拥有scoop的同学可以用Power Shell直接安装，没有的可以点击<a href="https://git-scm.com/" target="_blank" rel="noopener">下载git安装包</a></p><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop install git</span><br></pre></td></tr></table></figure></li><li><p>将git连接远程仓库（Github）,<a href="https://www.runoob.com/git/git-remote-repo.html" target="_blank" rel="noopener">教程</a></p></li><li><p>点击<a href="https://github.com/new" target="_blank" rel="noopener">此处</a>新建一个仓库用来存放图片</p></li><li><p>点击此处<a href="https://github.com/skycity233/MDPIC/releases/download/v1.1/mdpic.rar" target="_blank" rel="noopener">下载MdPic</a></p></li><li><p>将你新建的仓库clone到本地</p><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone [your repository]</span><br></pre></td></tr></table></figure></li><li><p>将下载的rar包解压到你clone的文件夹里</p></li><li><p>完成后，打开<a href="https://github.com/skycity233/MDPIC/blob/master/config.yml" target="_blank" rel="noopener">config.yml</a>将github_username和repository_name修改为你的用户名和仓库名，还可以修改快捷键以及语言。</p></li><li><p>点击mdpic.exe开始使用</p></li></ol><h3 id="🎁-如何使用"><a class="header-anchor" href="#🎁-如何使用">¶</a>🎁 如何使用</h3><ol><li><p>复制一张照片到剪贴板，或者使用截图软件截图到剪贴板（例如Snipaste）</p></li><li><p>按下F8上传你的图片到你的github（<strong>快捷键可以通过修改config.yml自定义</strong>）</p></li><li><p>上传成功后，会有提示，同时url会返回到你的剪贴板。（<strong>url会瞬间给你，但是github上传还需一定时间，你可以在markdown中先引用，过一会儿github的图片才会显示</strong>）</p></li></ol><p align="center" "=""><img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215152823895879.gif"><br> 使用截图工具上传<br></p><p align="center" "=""><img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215153443403012.gif"><br> 复制文件上传<br></p><p align="center" "=""><img height="400" src="https://raw.githubusercontent.com/skycity233/MYMDPIC/master/images/image_20191215153443403012.gif"><br> 复制多个文件上传<br></p>]]></content>
     
@@ -45,8 +45,8 @@
   
   <entry>
     <title>ASC上课笔记</title>
-    <link href="https://skycity233.github.io/Jack/2019/01/14/%E5%9F%B9%E8%AE%AD/"/>
-    <id>https://skycity233.github.io/Jack/2019/01/14/培训/</id>
+    <link href="https://skycity233.github.io/Jack/2019/01/5101/"/>
+    <id>https://skycity233.github.io/Jack/2019/01/5101/</id>
     <published>2019-01-14T01:52:16.949Z</published>
     <updated>2019-01-14T13:03:09.472Z</updated>
     
@@ -64,8 +64,8 @@
   
   <entry>
     <title>我的电脑上有哪些神奇的软件</title>
-    <link href="https://skycity233.github.io/Jack/2019/01/13/%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A5%9E%E5%A5%87%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
-    <id>https://skycity233.github.io/Jack/2019/01/13/我的电脑上有哪些神奇的软件/</id>
+    <link href="https://skycity233.github.io/Jack/2019/01/50183/"/>
+    <id>https://skycity233.github.io/Jack/2019/01/50183/</id>
     <published>2019-01-13T08:17:13.900Z</published>
     <updated>2019-12-15T10:52:12.403Z</updated>
     
@@ -84,8 +84,8 @@
   
   <entry>
     <title>ASC准备工作</title>
-    <link href="https://skycity233.github.io/Jack/2019/01/13/%E9%98%85%E8%AF%BB/"/>
-    <id>https://skycity233.github.io/Jack/2019/01/13/阅读/</id>
+    <link href="https://skycity233.github.io/Jack/2019/01/10504/"/>
+    <id>https://skycity233.github.io/Jack/2019/01/10504/</id>
     <published>2019-01-13T08:17:13.877Z</published>
     <updated>2019-12-15T12:12:16.471Z</updated>
     
